@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="15705" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="appleTV" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="chartsTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DeN-XL-5dP">
+                                <rect key="frame" x="20" y="20" width="864" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fg-bV-Qa0" userLabel="View2">
+                                <rect key="frame" x="904" y="20" width="864" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeJ-Rz-6y3" userLabel="View3">
+                                <rect key="frame" x="20" y="526" width="864" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aiE-68-q8b" userLabel="View4">
+                                <rect key="frame" x="904" y="526" width="864" height="486"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VeJ-Rz-6y3" firstAttribute="leading" secondItem="DeN-XL-5dP" secondAttribute="leading" id="4iU-YB-ZCI"/>
+                            <constraint firstItem="aiE-68-q8b" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="LGT-MK-sNK"/>
+                            <constraint firstItem="DeN-XL-5dP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="20" id="N1d-TD-FSC"/>
+                            <constraint firstItem="VeJ-Rz-6y3" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="NHd-Qk-AGv"/>
+                            <constraint firstItem="aiE-68-q8b" firstAttribute="leading" secondItem="VeJ-Rz-6y3" secondAttribute="trailing" constant="20" id="Udq-Fw-vX0"/>
+                            <constraint firstItem="aiE-68-q8b" firstAttribute="top" secondItem="VeJ-Rz-6y3" secondAttribute="top" id="XWI-5Z-sxa"/>
+                            <constraint firstItem="2fg-bV-Qa0" firstAttribute="top" secondItem="DeN-XL-5dP" secondAttribute="top" id="YPT-B9-vfu"/>
+                            <constraint firstItem="VeJ-Rz-6y3" firstAttribute="top" secondItem="DeN-XL-5dP" secondAttribute="bottom" constant="20" id="cyY-Rk-SuB"/>
+                            <constraint firstItem="DeN-XL-5dP" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="dIm-vY-xg8"/>
+                            <constraint firstItem="2fg-bV-Qa0" firstAttribute="leading" secondItem="DeN-XL-5dP" secondAttribute="trailing" constant="20" id="hex-bc-GLz"/>
+                            <constraint firstAttribute="leading" secondItem="DeN-XL-5dP" secondAttribute="leading" constant="-20" id="kke-Gh-S50"/>
+                            <constraint firstItem="2fg-bV-Qa0" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="mjw-2e-6W5"/>
+                            <constraint firstItem="DeN-XL-5dP" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="oed-fV-fVu"/>
+                            <constraint firstItem="aiE-68-q8b" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="olu-F5-MvQ"/>
+                            <constraint firstItem="VeJ-Rz-6y3" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="p1u-NO-d8P"/>
+                            <constraint firstItem="2fg-bV-Qa0" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.45" id="zOx-BU-Xom"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wu6-TO-1qx"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomLeft" destination="VeJ-Rz-6y3" id="yLE-Ix-91M"/>
+                        <outlet property="bottomRight" destination="aiE-68-q8b" id="ROZ-u7-zL4"/>
+                        <outlet property="topLeft" destination="DeN-XL-5dP" id="x0q-c2-uNp"/>
+                        <outlet property="topRight" destination="2fg-bV-Qa0" id="8oG-GT-uSK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69" y="69"/>
+        </scene>
+    </scenes>
+</document>
